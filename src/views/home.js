@@ -13,7 +13,7 @@ export const Home = () => {
   const showCard = (data) => {
     const ulElement = document.createElement("ul");
     ulElement.classList.add("ulPelis");
-
+    ulElement.setAttribute("id", "lista");
     data.forEach((item) => {
       ulElement.appendChild(card(item));
     });
